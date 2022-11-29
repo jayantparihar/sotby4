@@ -1,0 +1,222 @@
+.grid-item-container-year {
+    position: absolute;
+    top: 200px;
+    left: 202px;
+    /*Equal to number of rows * row height*/
+    height: 500px;
+}
+
+.grid-item-container-month {
+    position: absolute;
+    top: 150px;
+    left: 175px;
+    /*Equal to number of rows * row height*/
+    height: 500px;
+}
+
+.grid-item-container-week {
+    position: absolute;
+    left: 175px;
+    /*Equal to number of rows * row height*/
+    height: 235px;
+}
+
+.grid-container-layout {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(8, 100px);
+    grid-auto-flow: column;
+}
+
+.grid-container-layout-weeks {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(6, 175px);
+    grid-auto-flow: column;
+}
+
+.grid-container-layout-months {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(8, 175px);
+    grid-auto-flow: column;
+}
+
+.grid-container-layout-years {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(55, 100px);
+    grid-auto-flow: column;
+}
+
+.grid-container-months {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(8, 175px);
+    grid-template-rows: 50px 50px;
+    grid-auto-flow: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.grid-container-years {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(55, 100px);
+    grid-template-rows: 50px 100px;
+    grid-auto-flow: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101;
+}
+
+.grid-container-weeks {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-rows: 50px 50px;
+    grid-auto-flow: column;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    background-color: white;
+}
+
+.grid-month {
+    background-color: rgb(0,60,113);
+    color: white;
+    position: sticky;
+}
+
+.grid-week {
+    background-color: rgb(0,60,113);
+    color: white;
+}
+
+.grid-day {
+    background-color: rgb(100,100,100);
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+}
+
+.grid-header {
+    text-align: center;
+}
+
+.scroll-button {
+    color: white;
+    width: 50%;
+}
+
+.year-scroll {
+    top: 10%;
+    margin: 2.5rem;
+    size: small;
+}
+
+.year-scroll-div {
+    background-color: white;
+}
+
+.scroll-button-year {
+    color: black;
+}
+
+.grid-slot {
+    background-color: lightgrey;
+}
+
+.popup {
+    background-color: white;
+}
+
+.course-select {
+    color: white !important;
+}
+
+.submit-button {
+    border-radius: 4px;
+    border: none;
+    padding: 5%;
+    width: max-content;
+}
+
+.detailed-button {
+    background-color: darkgrey;
+}
+
+.grid-row-header {
+    background-color: rgb(0,60,113);
+    padding: 5px;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    /* text-align: center; */
+}
+
+.grid-row-header p {
+    font-weight: bold;
+    color: white;
+}
+
+.grid-row-header-close {
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.15rem;
+    /* width: 50%; */
+    background-color: #d44848;
+}
+
+.grid-row-label-container {
+    display: grid;
+    grid-row-gap: 2px;
+}
+
+.grid-row-labels {
+    background-color: rgb(100,100,100);
+    text-align: center;
+    
+}
+
+.grid-row-labels p {
+    color: white;
+    font-weight: bold;
+    padding: 15%;
+    /* margin-bottom: 15% */
+}
+
+
+.add-row-modal-bg {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100,100,100);
+    padding: 10px;
+    border: 5px;
+    border-color: rgb(0,60,113);
+}
+
+.error-modal {
+    margin: 0 10% 0 10%;
+    padding: 10% 10% 0 10%;
+    width: 60%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    top: 25%;
+    z-index: 9999;
+}
+
+
+
