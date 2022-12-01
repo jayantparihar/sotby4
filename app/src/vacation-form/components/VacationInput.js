@@ -86,34 +86,14 @@ const VacationInput = ({ onAdd }) => {
     
   });
 
-  const st = makeStyles({
-    input: {
-      display: "inline-block",
-      width: "93%",
-      border: "1",
-      padding: 10,
-      margin: 5,
-      borderRadius: 5,
-      cursor: "pointer",
-      textDecoration: "none",
-      fontSize: 15,
-      fontFamily: "inherit"
-    }
-    
-  });
-
   function AddButton() {
     const classes = styles();
     return <Button className={classes.button} type="submit">Add</Button>
   }
 
   function DateP(){
-    const classes = st();
-    return 
-    <DatePicker 
-    className={classes.input}
-    
-  />
+    const classes = styles();
+    return <Button className={classes.button} type="submit">Add</Button>
   }
 
   const onSubmit = (e) => {
@@ -178,20 +158,38 @@ const VacationInput = ({ onAdd }) => {
           </Select>
         </FormControl><br />
         <text>Date</text>
-        <DateP 
-        selectsRange={true}
-        startDate={startDate}
-        endDate={endDate}
-        onChange={(update) => {
-          console.log('update', update)
-          // doing it all at once seems to be a bit buggy. maybe add some logic
-          setDateRange(update);
-          setStartingDate(update[0]);
-          if (update[1] !== null) {
-            setEndingDate(update[1]);
-            setDay(`${getBusinessDateCount(update[0], update[1])}`);
-          }
-        }}/>
+        <DatePicker 
+        // style={{
+        //     display: "inline-block",
+        //     width: "93%",
+        //     border: "1",
+        //     padding: 10,
+        //     margin: 5,
+        //     borderRadius: 5,
+        //     cursor: "pointer",
+        //     textDecoration: "none",
+        //     fontSize: 15,
+        //     fontFamily: "inherit"
+        //   }}
+          wrapperClassName='datepicker'
+          selectsRange={true}
+          startDate={startDate}
+          endDate={endDate}
+          onChange={(update) => {
+            console.log('update', update)
+            // doing it all at once seems to be a bit buggy. maybe add some logic
+            setDateRange(update);
+            setStartingDate(update[0]);
+            if (update[1] !== null) {
+              setEndingDate(update[1]);
+              setDay(`${getBusinessDateCount(update[0], update[1])}`);
+            }
+            // const start = new Date(update[0]);
+            // const end = new Date(update[1]);
+
+            // exclude weekends
+          }}
+        />
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
           <Select style={{
