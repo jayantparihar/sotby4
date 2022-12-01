@@ -111,7 +111,7 @@ const VacationInput = ({ onAdd }) => {
           <InputLabel id="demo-simple-select-helper-label">NEW/CANCEL</InputLabel>
           <Select style={{
       display: "inline-block",
-      width: "100%",
+      width: "260%",
       border: "none",
       padding: 10,
       margin: 5,
@@ -153,7 +153,18 @@ const VacationInput = ({ onAdd }) => {
           </Select>
         </FormControl><br />
         <text>Date</text>
-        <DatePicker
+        <DatePicker style={{
+      display: "inline-block",
+      width: "260%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}
           selectsRange={true}
           startDate={startDate}
           endDate={endDate}
@@ -174,18 +185,62 @@ const VacationInput = ({ onAdd }) => {
         />
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
-          <Select
+          <Select style={{
+      display: "inline-block",
+      width: "260%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
             label="VA/BT"
             onChange={(e) => setVABT(e.target.value)}
           >
-            <MenuItem value={"VA"} style={{ width: "100%" }}>Vacation</MenuItem>
-            <MenuItem value={"BT"} style={{ width: "100%" }}>Banked</MenuItem>
+            <MenuItem value={"VA"} style={{
+      display: "inline-block",
+      width: "100%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}>Vacation</MenuItem>
+            <MenuItem value={"BT"} style={{
+      display: "inline-block",
+      width: "100%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}>Banked</MenuItem>
           </Select>
         </FormControl><br />
         <text>Notes on vacation</text><br />
-        <input className="vacation-input-large" type="text" placeholder="..." value={notes} onChange={(e) => setNotes(e.target.value)} /><br />
+        <input style={{
+      display: "inline-block",
+      width: "260%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }} className="vacation-input-large" type="text" placeholder="..." value={notes} onChange={(e) => setNotes(e.target.value)} /><br />
         <AddButton />
       </Form>
     </UserInputContainer>
