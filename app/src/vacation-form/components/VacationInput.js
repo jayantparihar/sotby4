@@ -121,8 +121,30 @@ const VacationInput = ({ onAdd }) => {
             label="NEW/CANCEL"
             onChange={(e) => setNC(e.target.value)}
           >
-            <MenuItem value={"N"} style={{ width: "100%", background: "steelblue" }}>New</MenuItem>
-            <MenuItem value={"C"} style={{ width: "100%", background: "steelblue" }}>Cancel</MenuItem>
+            <MenuItem value={"N"} style={{
+      display: "inline-block",
+      width: "100%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}>New</MenuItem>
+            <MenuItem value={"C"} style={{
+      display: "inline-block",
+      width: "100%",
+      border: "none",
+      padding: 10,
+      margin: 5,
+      borderRadius: 5,
+      cursor: "pointer",
+      textDecoration: "none",
+      fontSize: 15,
+      fontFamily: "inherit"
+    }}>Cancel</MenuItem>
           </Select>
         </FormControl><br />
         <text>Date</text>
