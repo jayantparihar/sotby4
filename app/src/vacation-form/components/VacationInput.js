@@ -110,19 +110,19 @@ const VacationInput = ({ onAdd }) => {
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">NEW/CANCEL</InputLabel>
           <Select width="100%" display="inline-block" border="none" padding="10" 
-      margin="5"
-      borderRadius="5"
-      cursor="pointer"
-      textDecoration="none"
-      fontSize="15"
-      fontFamily="inherit"
+            margin="5"
+            borderRadius="5"
+            cursor="pointer"
+            textDecoration="none"
+            fontSize="15"
+            fontFamily="inherit"
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
             label="NEW/CANCEL"
             onChange={(e) => setNC(e.target.value)}
           >
-            <MenuItem value={"N"} style={{ width: "100%" }}>New</MenuItem>
-            <MenuItem value={"C"} style={{ width: "100%" }}>Cancel</MenuItem>
+            <MenuItem value={"N"} style={{ width: "100%", background: "steelblue" }}>New</MenuItem>
+            <MenuItem value={"C"} style={{ width: "100%", background: "steelblue" }}>Cancel</MenuItem>
           </Select>
         </FormControl><br />
         <text>Date</text>
