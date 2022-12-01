@@ -72,16 +72,16 @@ const VacationInput = ({ onAdd }) => {
     button: {
       display: "inline-block",
       width: "100%",
-      background: steelblue,
+      background: "steelblue",
       color: "white",
-      border: none,
+      border: "none",
       padding: 10,
       margin: 5,
       borderRadius: 5,
-      cursor: pointer,
-      textDecoration: none,
+      cursor: "pointer",
+      textDecoration: "none",
       fontSize: 15,
-      fontFamily: inherit
+      fontFamily: "inherit"
     }
     
   });
