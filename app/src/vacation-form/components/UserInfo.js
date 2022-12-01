@@ -9,24 +9,38 @@ const Form = styled('form')({
 })
 
 const buttonStyles = makeStyles({
+    // button: {
+    //     border: 0,
+    //     borderRadius: 5,
+    //     color: "white",
+    //     padding: '0 10px',
+    //     background: "#003E6B",
+    //     '&:hover': {
+    //         background: "#5082A7",
+    //     },
+    //     '&:focus': {
+    //         background: "#003E6B",
+    //         '&:hover': {
+    //             background: "#5082A7"
+    //         }
+    //     },
+    //     marginTop: 10,
+    //     marginBottom: 10
+    // }
     button: {
-        border: 0,
-        borderRadius: 5,
+        display: "inline-block",
+        width: "100%",
+        background: "steelblue",
         color: "white",
-        padding: '0 10px',
-        background: "#003E6B",
-        '&:hover': {
-            background: "#5082A7",
-        },
-        '&:focus': {
-            background: "#003E6B",
-            '&:hover': {
-                background: "#5082A7"
-            }
-        },
-        marginTop: 10,
-        marginBottom: 10
-    }
+        border: "none",
+        padding: 10,
+        margin: 5,
+        borderRadius: 5,
+        cursor: "pointer",
+        textDecoration: "none",
+        fontSize: 15,
+        fontFamily: "inherit"
+      }
 });
 
 function SubmitButton() {
