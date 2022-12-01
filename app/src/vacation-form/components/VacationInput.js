@@ -112,19 +112,7 @@ const VacationInput = ({ onAdd }) => {
     return 
     <DatePicker 
     className={classes.input}
-    selectsRange={true}
-    startDate={startDate}
-    endDate={endDate}
-    onChange={(update) => {
-      console.log('update', update)
-      // doing it all at once seems to be a bit buggy. maybe add some logic
-      setDateRange(update);
-      setStartingDate(update[0]);
-      if (update[1] !== null) {
-        setEndingDate(update[1]);
-        setDay(`${getBusinessDateCount(update[0], update[1])}`);
-      }
-    }}
+    
   />
   }
 
@@ -190,7 +178,20 @@ const VacationInput = ({ onAdd }) => {
           </Select>
         </FormControl><br />
         <text>Date</text>
-        <DateP />
+        <DateP 
+        selectsRange={true}
+        startDate={startDate}
+        endDate={endDate}
+        onChange={(update) => {
+          console.log('update', update)
+          // doing it all at once seems to be a bit buggy. maybe add some logic
+          setDateRange(update);
+          setStartingDate(update[0]);
+          if (update[1] !== null) {
+            setEndingDate(update[1]);
+            setDay(`${getBusinessDateCount(update[0], update[1])}`);
+          }
+        }}/>
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
           <Select style={{
