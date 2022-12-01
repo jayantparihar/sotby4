@@ -62,7 +62,7 @@ const Vacation = ({ vacation, onDelete }) => {
 					<div className="vacation-grid-box padding-top">{vacation.NC}</div>
 				</VacationDetailSeparator>
 				<VacationDetailSeparator>
-					<div className="vacation-grid-box padding-top">Date:{vacation_start}</div>
+					<div className="vacation-grid-box padding-top"> :{vacation_start}</div>
 					<text> ~ </text>
 					<div className="vacation-grid-box padding-top">{vacation_end}</div>
 				</VacationDetailSeparator>
