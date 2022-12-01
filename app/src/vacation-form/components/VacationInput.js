@@ -109,7 +109,20 @@ const VacationInput = ({ onAdd }) => {
       <Form onSubmit={onSubmit}>
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">NEW/CANCEL</InputLabel>
-          <Select
+          <Select style={
+                  display="inline-block",
+                  width="100%",
+                  background="steelblue",
+                  color="white",
+                  border="none",
+                  padding=10,
+                  margin=5,
+                  borderRadius=5,
+                  cursor="pointer",
+                  textDecoration="none",
+                  fontSize=15,
+                  fontFamily="inherit"
+          }
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
             label="NEW/CANCEL"
