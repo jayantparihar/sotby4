@@ -70,7 +70,7 @@ const VacationInput = ({ onAdd }) => {
     //   marginBottom: 10
     // }
     button: {
-      display: inline-block,
+      display: "inline-block",
       width: "100%",
       background: steelblue,
       color: "white",
