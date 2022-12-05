@@ -107,6 +107,12 @@ const VacationInput = ({ onAdd }) => {
     setNotes('');
   }
 
+  const DatePickerWrapperStyles = createGlobalStyle`
+    .date_picker.full-width {
+        width: 100%;
+    }
+  `;
+
   return (
     
     <UserInputContainer>
@@ -160,7 +166,7 @@ const VacationInput = ({ onAdd }) => {
         <text>Date</text>
         <DatePicker 
 
-          wrapperClassName='datepicker'
+          wrapperClassName='date_picker full-width'
           selectsRange={true}
           startDate={startDate}
           endDate={endDate}
@@ -226,17 +232,19 @@ const VacationInput = ({ onAdd }) => {
         </FormControl><br />
         <text>Notes on vacation</text><br />
         <input style={{
-      display: "inline-block",
-      width: "93%",
-      border: "1",
-      padding: 10,
-      margin: 5,
-      borderRadius: 5,
-      cursor: "pointer",
-      textDecoration: "none",
-      fontSize: 15,
-      fontFamily: "inherit"
-    }} className="vacation-input-large" type="text" placeholder="..." value={notes} onChange={(e) => setNotes(e.target.value)} /><br />
+          display: "inline-block",
+          width: "93%",
+          border: "1",
+          padding: 10,
+          margin: 5,
+          borderRadius: 5,
+          cursor: "pointer",
+          textDecoration: "none",
+          fontSize: 15,
+          fontFamily: "inherit"
+          }} 
+          className="vacation-input-large" type="text" placeholder="..." value={notes} 
+          onChange={(e) => setNotes(e.target.value)} /><br />
         <AddButton />
       </Form>
     </UserInputContainer>
