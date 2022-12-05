@@ -4,7 +4,7 @@ import NoVacations from "./components/NoVacations"
 import { ReactSession } from 'react-client-session';
 import { createTheme } from "@mui/material";
 import { styled } from "@mui/system";
-import Header from "./components/Header";
+import AdminNav from '../../../src/components/AdminNav';
 
 // REPLACE WHEN HOSTING
 const END_POINT_ROOT = "/"
@@ -88,7 +88,7 @@ export default class VacationApproval extends React.Component {
     renderApp() {
         return isAdmin() ? (
             <ApprovalContainer theme={screenLayout}>
-                <Header />
+        <AdminNav></AdminNav>
                 {this.state.vacations.length > 0 ?
                     (<NotApprovedList vacations={this.state.vacations} onApprove={this.approveVacation} onReject={this.rejectVacation} />)
                     : (<NoVacations />)}
