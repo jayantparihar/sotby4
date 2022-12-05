@@ -7,6 +7,8 @@ import { ReactSession } from 'react-client-session';
 import { makeStyles } from "@material-ui/core/styles";
 import { styled } from "@mui/system";
 import { createTheme } from "@mui/material";
+import { Link } from 'react-router-dom'
+import logo from '../images/BCIT_logo.png'
 
 const END_POINT_ROOT = "/"
 const VACATION_RESOURCE = "users"
@@ -195,6 +197,10 @@ export default class Vacation extends React.Component {
 	renderApp() {
 		return isUser() ? (
 			<Container>
+			<label><br/></label>
+			<div align="center">
+				<Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
+			</div>
 				
 				<Wrapper theme={screenLayout} sx={{
 					height: {

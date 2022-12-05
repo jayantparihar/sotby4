@@ -77,7 +77,7 @@ function Create_resource(socket) {
         <label><br/></label>
         <div align="center">
             <Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
-            </div>
+        </div>
                     <form onSubmit={create_resource} className={styles['resource-form']}>
                         <h2>Create Resource</h2>
                         <label>
