@@ -4,7 +4,7 @@ import NoVacations from "./components/NoVacations"
 import { ReactSession } from 'react-client-session';
 import { createTheme } from "@mui/material";
 import { styled } from "@mui/system";
-import AdminNav from '../../../src/components/AdminNav';
+import AdminNav from '../../src/components/AdminNav';
 
 // REPLACE WHEN HOSTING
 const END_POINT_ROOT = "/"
