@@ -8,11 +8,13 @@
   .react-datepicker__input-container input {
     display: block;
     width: 100%;
-    border: "1";
-    padding: 10;
-    margin: 5;
-    border-radius: 5;
-    font-size: 15;
-    font-family: "inherit";
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
   }
   
