@@ -5,6 +5,7 @@ import { ReactSession } from 'react-client-session';
 import { createTheme } from "@mui/material";
 import { styled } from "@mui/system";
 import AdminNav from '../../src/components/AdminNav';
+import { Link } from 'react-router-dom'
 import logo from '../images/BCIT_logo.png';
 
 // REPLACE WHEN HOSTING
@@ -96,6 +97,7 @@ export default class VacationApproval extends React.Component {
         <div align="center">
             <Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
         </div>
+            <div><h1>Pending Approval Requrest </h1></div>
                 {this.state.vacations.length > 0 ?
                     (<NotApprovedList vacations={this.state.vacations} onApprove={this.approveVacation} onReject={this.rejectVacation} />)
                     : (<NoVacations />)}
