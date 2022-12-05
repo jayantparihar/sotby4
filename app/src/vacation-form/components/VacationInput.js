@@ -125,9 +125,9 @@ const VacationInput = ({ onAdd }) => {
           <InputLabel id="demo-simple-select-helper-label">NEW/CANCEL</InputLabel>
           <Select style={{
               display: "inline-block",
-              width: "260%",
+              width: "265%",
               border: "none",
-              padding: 10,
+              padding: "10px 0px",
               margin: 5,
               borderRadius: 5,
               cursor: "pointer",
