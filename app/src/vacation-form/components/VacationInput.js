@@ -166,7 +166,7 @@ const VacationInput = ({ onAdd }) => {
     }}>Cancel</MenuItem>
           </Select>
         </FormControl><br />
-        <text>Date</text>
+        <text>&nbsp;&nbsp;&nbsp;Date</text>
         <DatePicker 
 
           //wrapperClassName='date_picker full-width'
@@ -233,7 +233,7 @@ const VacationInput = ({ onAdd }) => {
     }}>Banked</MenuItem>
           </Select>
         </FormControl><br />
-        <text>Notes on vacation</text><br />
+        <text>&nbsp;&nbsp;&nbsp;Notes on vacation</text><br />
         <input style={{
           display: "inline-block",
           width: "129%",
