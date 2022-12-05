@@ -14,7 +14,7 @@ const buttonStyles = makeStyles({
         display: "inline-block",
         width: "100%",
         background: "steelblue",
-        color: "Black",
+        color: "white",
         border: "none",
         padding: 10,
         margin: 5,
@@ -28,7 +28,7 @@ const buttonStyles = makeStyles({
 
 function SubmitButton() {
     const classes = buttonStyles();
-    return <Button className={classes.button} type="submit">Submit</Button>
+    return <Button className={classes.button} onMouseOver="this.style.background='green'" type="submit">Submit</Button>
 }
 
 const UserInfo = ({ onAdd }) => {
