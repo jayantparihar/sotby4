@@ -41,12 +41,12 @@ const styles = makeStyles({
 		width: "8vw",
 		alignSelf: "center",
 		'&:hover': {
-			background: "#5082A7",
+			background: "blue",
 		},
 		'&:focus': {
-			background: "#003E6B",
+			background: "blue",
 			'&:hover': {
-				background: "#5082A7"
+				background: "blue"
 			}
 		},
 		textAlign: "right",

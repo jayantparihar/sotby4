@@ -71,7 +71,7 @@ const VacationInput = ({ onAdd }) => {
       display: "inline-block",
       width: "100%",
       background: "steelblue",
-      color: "red",
+      color: "white",
       border: "none",
       padding: 10,
       margin: 5,
@@ -79,12 +79,9 @@ const VacationInput = ({ onAdd }) => {
       cursor: "pointer",
       textDecoration: "none",
       fontSize: 15,
-      fontFamily: "inherit",
-      hover: "blue"
+      fontFamily: "inherit"
     }
-    // button:hover {
-    //   background: "blue"
-    // }
+
     
   });
 
