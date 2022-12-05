@@ -13,7 +13,8 @@ import AdminNav from '../../../src/components/AdminNav';
 import UserNav from "../../../src/components/UserNav";
 import DefaultNav from "../../../src/components/DefaultNav";
 import '../../../src/navbar.css';
-import styled, { css, createGlobalStyle } from 'styled-components';
+import "react-datepicker/dist/react-datepicker.css";
+import "./styles.css";
 
 function SelectNav(props) {
   const userStatus = props.userStatus;
@@ -167,7 +168,7 @@ const VacationInput = ({ onAdd }) => {
         <text>Date</text>
         <DatePicker 
 
-          wrapperClassName='date_picker full-width'
+          //wrapperClassName='date_picker full-width'
           selectsRange={true}
           startDate={startDate}
           endDate={endDate}
