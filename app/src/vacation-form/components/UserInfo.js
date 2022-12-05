@@ -14,7 +14,10 @@ const buttonStyles = makeStyles({
         display: "inline-block",
         width: "100%",
         background: "steelblue",
-        color: "white",
+        color: "Black",
+        "&:hover": {
+            background: "yellow"
+          },
         border: "none",
         padding: 10,
         margin: 5,
