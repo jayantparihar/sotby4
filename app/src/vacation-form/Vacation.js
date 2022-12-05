@@ -198,6 +198,8 @@ export default class Vacation extends React.Component {
 		return isUser() ? (
 			<Container>
 			<label><br/></label>
+			<label><br/></label>
+			<label><br/></label>
 			<div align="center">
 				<Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
 			</div>
