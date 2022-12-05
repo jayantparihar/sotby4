@@ -16,7 +16,8 @@ const buttonStyles = makeStyles({
         background: "steelblue",
         color: "Black",
         "&:hover": {
-            background: "yellow"
+            background: "skyblue",
+            color:"Black"
           },
         border: "none",
         padding: 10,

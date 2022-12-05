@@ -72,6 +72,10 @@ const VacationInput = ({ onAdd }) => {
       width: "100%",
       background: "steelblue",
       color: "Black",
+      "&:hover": {
+        background: "skyblue",
+        color:"Black"
+      },
       border: "none",
       padding: 10,
       margin: 5,
