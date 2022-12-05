@@ -109,11 +109,11 @@ const VacationInput = ({ onAdd }) => {
     setNotes('');
   }
 
-  const DatePickerWrapperStyles = createGlobalStyle`
-    .date_picker.full-width {
-        width: 100%;
-    }
-  `;
+  // const DatePickerWrapperStyles = createGlobalStyle`
+  //   .date_picker.full-width {
+  //       width: 100%;
+  //   }
+  // `;
 
   return (
     
