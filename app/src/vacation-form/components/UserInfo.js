@@ -9,24 +9,7 @@ const Form = styled('form')({
 })
 
 const buttonStyles = makeStyles({
-    // button: {
-    //     border: 0,
-    //     borderRadius: 5,
-    //     color: "white",
-    //     padding: '0 10px',
-    //     background: "#003E6B",
-    //     '&:hover': {
-    //         background: "#5082A7",
-    //     },
-    //     '&:focus': {
-    //         background: "#003E6B",
-    //         '&:hover': {
-    //             background: "#5082A7"
-    //         }
-    //     },
-    //     marginTop: 10,
-    //     marginBottom: 10
-    // }
+
     button: {
         display: "inline-block",
         width: "100%",

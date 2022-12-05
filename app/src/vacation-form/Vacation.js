@@ -76,7 +76,7 @@ const Wrapper = styled('div')({
 	backgroundColor: "white",
 	margin: "30px auto",
 	minHeight: "200px",
-	border: "1px solid steelblue",
+
 	padding: "30px",
 	borderRadius: "5px",
 	textAlign: "left",
@@ -195,7 +195,7 @@ export default class Vacation extends React.Component {
 	renderApp() {
 		return isUser() ? (
 			<Container>
-				<Header />
+				
 				<Wrapper theme={screenLayout} sx={{
 					height: {
 						xxs: "100%",
