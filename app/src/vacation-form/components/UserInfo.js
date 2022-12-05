@@ -12,13 +12,13 @@ const buttonStyles = makeStyles({
 
     button: {
         display: "inline-block",
-        width: "100%",
+        width: "141%",
         background: "steelblue",
         color: "Black",
         "&:hover": {
-            background: "skyblue",
-            color:"Black"
-          },
+          background: "skyblue",
+          color:"Black"
+        },
         border: "none",
         padding: 10,
         margin: 5,
@@ -26,7 +26,8 @@ const buttonStyles = makeStyles({
         cursor: "pointer",
         textDecoration: "none",
         fontSize: 15,
-        fontFamily: "inherit"
+        fontFamily: "inherit",
+        marginLeft: "12px"
       }
 });
 

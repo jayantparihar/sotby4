@@ -71,7 +71,7 @@ const VacationInput = ({ onAdd }) => {
   const styles = makeStyles({
     button: {
       display: "inline-block",
-      width: "100%",
+      width: "141%",
       background: "steelblue",
       color: "Black",
       "&:hover": {
@@ -85,7 +85,8 @@ const VacationInput = ({ onAdd }) => {
       cursor: "pointer",
       textDecoration: "none",
       fontSize: 15,
-      fontFamily: "inherit"
+      fontFamily: "inherit",
+      marginLeft: "12px"
     }
 
     
@@ -190,17 +191,17 @@ const VacationInput = ({ onAdd }) => {
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
           <Select style={{
-      display: "inline-block",
-      width: "260%",
-      border: "none",
-      padding: 10,
-      margin: 5,
-      borderRadius: 5,
-      cursor: "pointer",
-      textDecoration: "none",
-      fontSize: 15,
-      fontFamily: "inherit"
-    }}
+              display: "inline-block",
+              width: "235%",
+              border: "none",
+              padding: 10,
+              margin: 5,
+              borderRadius: 5,
+              cursor: "pointer",
+              textDecoration: "none",
+              fontSize: 15,
+              fontFamily: "inherit"
+            }}
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
             label="VA/BT"
@@ -235,10 +236,12 @@ const VacationInput = ({ onAdd }) => {
         <text>Notes on vacation</text><br />
         <input style={{
           display: "inline-block",
-          width: "93%",
+          width: "129%",
           border: "1",
           padding: 10,
           margin: 5,
+          marginLeft:"15px",
+          height:"25px",
           borderRadius: 5,
           cursor: "pointer",
           textDecoration: "none",
