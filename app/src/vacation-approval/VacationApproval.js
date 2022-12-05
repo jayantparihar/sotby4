@@ -5,6 +5,7 @@ import { ReactSession } from 'react-client-session';
 import { createTheme } from "@mui/material";
 import { styled } from "@mui/system";
 import AdminNav from '../../src/components/AdminNav';
+import logo from '../images/BCIT_logo.png';
 
 // REPLACE WHEN HOSTING
 const END_POINT_ROOT = "/"
@@ -89,6 +90,12 @@ export default class VacationApproval extends React.Component {
         return isAdmin() ? (
             <ApprovalContainer theme={screenLayout}>
         <AdminNav></AdminNav>
+        <label><br/></label>
+        <label><br/></label>
+		<label><br/></label>
+        <div align="center">
+            <Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
+        </div>
                 {this.state.vacations.length > 0 ?
                     (<NotApprovedList vacations={this.state.vacations} onApprove={this.approveVacation} onReject={this.rejectVacation} />)
                     : (<NoVacations />)}
