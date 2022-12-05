@@ -8,6 +8,22 @@ import Select from '@mui/material/Select';
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import { styled } from "@mui/system";
+import { ReactSession } from 'react-client-session';
+import AdminNav from '../../../src/components/AdminNav';
+import UserNav from "../../../src/components/UserNav";
+import DefaultNav from "../../../src/components/DefaultNav";
+import '../../../src/navbar.css';
+
+function SelectNav(props) {
+  const userStatus = props.userStatus;
+  if (userStatus === 1) {
+      return <AdminNav />
+  }
+  if (userStatus === 0) {
+      return <UserNav />
+  }
+  return <DefaultNav />
+}
 
 
 function getBusinessDateCount(startDate, endDate) {
@@ -110,7 +126,9 @@ const VacationInput = ({ onAdd }) => {
   }
 
   return (
+    
     <UserInputContainer>
+      <SelectNav userStatus={ReactSession.get("admin")} />
       <Form onSubmit={onSubmit}>
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
           <InputLabel id="demo-simple-select-helper-label">NEW/CANCEL</InputLabel>
@@ -159,18 +177,7 @@ const VacationInput = ({ onAdd }) => {
         </FormControl><br />
         <text>Date</text>
         <DatePicker 
-        // style={{
-        //     display: "inline-block",
-        //     width: "93%",
-        //     border: "1",
-        //     padding: 10,
-        //     margin: 5,
-        //     borderRadius: 5,
-        //     cursor: "pointer",
-        //     textDecoration: "none",
-        //     fontSize: 15,
-        //     fontFamily: "inherit"
-        //   }}
+
           wrapperClassName='datepicker'
           selectsRange={true}
           startDate={startDate}
