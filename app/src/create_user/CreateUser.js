@@ -70,6 +70,8 @@ const create_user = (e) => {
         // feedback upon successful creation
         socket.on('userAdded', (user) => {
             document.getElementById("successMessage").innerText = "User successfully created."
+            document.getElementById("successMessage").style.color = 'Green';
+            document.getElementById("successMessage").style.fontWeight= 'Bold';
         });
 
         // displays error msg upon failure 
