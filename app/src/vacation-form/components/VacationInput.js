@@ -79,8 +79,12 @@ const VacationInput = ({ onAdd }) => {
       cursor: "pointer",
       textDecoration: "none",
       fontSize: 15,
-      fontFamily: "inherit"
+      fontFamily: "inherit",
+      hover: "blue"
     }
+    // button:hover {
+    //   background: "blue"
+    // }
     
   });
 
