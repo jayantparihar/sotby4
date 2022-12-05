@@ -8,7 +8,7 @@
   .react-datepicker__input-container input {
     display: block;
     width: 100%;
-    border: none;
+    border: 1px solid black;
     padding: 10px 20px;
     margin: 5px;
     border-radius: 5px;
