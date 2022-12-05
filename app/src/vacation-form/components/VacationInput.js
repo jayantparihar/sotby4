@@ -192,7 +192,7 @@ const VacationInput = ({ onAdd }) => {
           <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
           <Select style={{
               display: "inline-block",
-              width: "235%",
+              width: "240%",
               border: "none",
               padding: 10,
               margin: 5,
@@ -209,7 +209,7 @@ const VacationInput = ({ onAdd }) => {
           >
             <MenuItem value={"VA"} style={{
       display: "inline-block",
-      width: "100%",
+      width: "235%",
       border: "none",
       padding: 10,
       margin: 5,
@@ -221,7 +221,7 @@ const VacationInput = ({ onAdd }) => {
     }}>Vacation</MenuItem>
             <MenuItem value={"BT"} style={{
       display: "inline-block",
-      width: "100%",
+      width: "249%",
       border: "none",
       padding: 10,
       margin: 5,
