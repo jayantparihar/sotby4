@@ -14,7 +14,7 @@ const buttonStyles = makeStyles({
         display: "inline-block",
         width: "100%",
         background: "steelblue",
-        color: "white",
+        color: "Black",
         border: "none",
         padding: 10,
         margin: 5,

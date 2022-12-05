@@ -203,6 +203,7 @@ export default class Vacation extends React.Component {
 			<div align="center">
 				<Link to="/"><img src={logo} alt='logo' height="150" width="170" ></img></Link>
 			</div>
+            <div><h1>Request Vacation </h1></div>
 				
 				<Wrapper theme={screenLayout} sx={{
 					height: {

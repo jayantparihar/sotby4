@@ -90,11 +90,6 @@ const VacationInput = ({ onAdd }) => {
     return <Button className={classes.button} type="submit">Add</Button>
   }
 
-  function DateP(){
-    const classes = styles();
-    return <Button className={classes.button} type="submit">Add</Button>
-  }
-
   const onSubmit = (e) => {
     e.preventDefault();
 
