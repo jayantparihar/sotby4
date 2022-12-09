@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import UserInfo from "./components/UserInfo";
 import VacationInput from "./components/VacationInput";
 import VacationList from "./components/VacationList";
@@ -9,6 +8,7 @@ import { styled } from "@mui/system";
 import { createTheme } from "@mui/material";
 import { Link } from 'react-router-dom'
 import logo from '../images/BCIT_logo.png'
+import "vacation.css";
 
 const END_POINT_ROOT = "/"
 const VACATION_RESOURCE = "users"
