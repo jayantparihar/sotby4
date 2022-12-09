@@ -71,7 +71,7 @@ const VacationInput = ({ onAdd }) => {
   const styles = makeStyles({
     button: {
       display: "inline-block",
-      width: "141%",
+      width: "111%",
       background: "steelblue",
       color: "Black",
       "&:hover": {
