@@ -5,7 +5,7 @@ import { ReactSession } from 'react-client-session';
 
 export default function ResourceSlotWeek({ name, position, createResource, username, date}) {
   let userStatus = ReactSession.get("admin")
-  if (userStatus === 1) {  
+  if (userStatus !== undefined) {  
     return (
       <div className="grid-slot" style={{ position: "relative", gridArea: position.x + " / " + position.y + " / span 1 / span 1" }}>
         
