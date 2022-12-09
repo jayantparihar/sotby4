@@ -40,3 +40,15 @@
 .course-form button:active {
   transform: scale(0.98);
 }
+
+
+.ab {
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  text-align: center;
+}
+
