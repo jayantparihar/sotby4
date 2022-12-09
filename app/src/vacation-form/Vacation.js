@@ -8,7 +8,7 @@ import { styled } from "@mui/system";
 import { createTheme } from "@mui/material";
 import { Link } from 'react-router-dom'
 import logo from '../images/BCIT_logo.png'
-import "vacation.css";
+import "./components/vacation.css";
 
 const END_POINT_ROOT = "/"
 const VACATION_RESOURCE = "users"
