@@ -14,7 +14,7 @@ import UserNav from "../../../src/components/UserNav";
 import DefaultNav from "../../../src/components/DefaultNav";
 import '../../../src/navbar.css';
 import "react-datepicker/dist/react-datepicker.css";
-import "./styles.css";
+import "./stylesDate.css";
 
 function SelectNav(props) {
   const userStatus = props.userStatus;
