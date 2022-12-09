@@ -117,7 +117,7 @@ function Create_Course(socket) {
                             
         </label>
         <label>
-        <text id='start-and-end'>Duration: </text>
+        <text id='start-and-end'> Duration: </text>
                         <DatePicker
                             selectsRange={true}
                             startDate={startDate}
