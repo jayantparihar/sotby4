@@ -167,7 +167,7 @@ const VacationInput = ({ onAdd }) => {
           </Select>
         </FormControl><br />
         <text>&nbsp;&nbsp;&nbsp;Date</text>
-        <DatePicker 
+        <DatePicker className='ab'
 
           //wrapperClassName='date_picker full-width'
           selectsRange={true}

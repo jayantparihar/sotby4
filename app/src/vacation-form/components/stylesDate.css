@@ -3,9 +3,7 @@
     text-align: center;
   } */
   
-  .react-datepicker-wrapper,
-  .react-datepicker__input-container,
-  .react-datepicker__input-container input {
+.ab {
     display: block;
     width: 111%;
     height: 50px;
