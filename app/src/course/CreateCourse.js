@@ -7,6 +7,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import AdminNav from "../../src/components/AdminNav";
 import { Link } from 'react-router-dom'
 import logo from '../images/BCIT_logo.png'
+import './stylesDate.css'
 
 
 function isAdmin() {
