@@ -168,7 +168,6 @@ const VacationInput = ({ onAdd }) => {
         </FormControl><br />
         <text>&nbsp;&nbsp;&nbsp;Date</text>
         <DatePicker 
-
           //wrapperClassName='date_picker full-width'
           selectsRange={true}
           startDate={startDate}
@@ -189,7 +188,7 @@ const VacationInput = ({ onAdd }) => {
           }}
         />
         <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-          <InputLabel id="demo-simple-select-helper-label">VA/BT</InputLabel>
+          <InputLabel id="demo-simple-select-helper-label"></InputLabel>
           <Select style={{
               display: "inline-block",
               width: "265%",

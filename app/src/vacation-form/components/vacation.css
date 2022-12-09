@@ -185,7 +185,7 @@
   transform: scale(0.98);
 }
 
-.react-datepicker-wrapper,
+/* .react-datepicker-wrapper,
 .react-datepicker__input-container,
 .react-datepicker__input-container input {
   display: block;
@@ -198,4 +198,4 @@
   font-size: 15px;
   font-family: inherit;
   text-align: center;
-}
+} */
