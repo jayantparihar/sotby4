@@ -3,12 +3,14 @@
     text-align: center;
   } */
   
-  /* .react-datepicker-wrapper,
+  .react-datepicker-wrapper,
   .react-datepicker__input-container,
   .react-datepicker__input-container input {
     display: block;
     width: 111%;
     height: 50px;
+    /* border: 1px solid black;
+    padding: 10px 20px; */
     margin: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -17,4 +19,4 @@
     font-family: inherit;
     text-align: center;
   }
-   */
+  
